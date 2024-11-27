@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noble Plumbing USA</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Overpass:wght@600&display=swap" rel="stylesheet">
+    <style>
+	
+	   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif; /* Replace with your desired font */
+}
+	
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+		
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+/* Text color for desktop */
+.navbar-nav .nav-link {
+    color: #fff !important; /* White text */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: #fff !important; /* White logo text */
+    transition: color 0.3s ease;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #f8f9fa !important; /* Default Bootstrap bg-light color */
+    }
+
+    .navbar-nav .nav-link {
+        color: #000 !important; /* Black text for mobile */
+    }
+
+    .navbar-brand {
+        color: #000 !important; /* Black logo text for mobile */
+    }
+}
+        .carousel-item img {
+            height: 80vh;
+            object-fit: cover;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+       .carousel-caption {
+            display: block; /* Ensures visibility on mobile */
+        }
+}		
+        .services-container .service-card {
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .services-container .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+		
+		.custom-btn {
+         border-radius: 20px; /* Set border radius to 20px */
+        }
+		
+		/* For desktop */
+        .google-map iframe {
+         width: 100%;
+         height: 500px;
+        }
+
+        /* For mobile */
+        @media (max-width: 767px) {
+       .google-map iframe {
+        height: 310px;
+		margin-top: 20px;
+        }
+     }
+
+        footer {
+          background-color: #f8f9fa;
+          padding: 8px 0;
+          font-family: 'Outfit', sans-serif;
+        }
+
+        footer .social-media img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+
+        footer .contact-info img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="" alt="Logo" style="width: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="Testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+    <!-- Home Section (Carousel Slider) -->
+    <section id="home" class="container-fluid p-0">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <!-- Image Slider -->
+				                <div class="carousel-item active">
+                    <img src="images/sli1.jpg" class="d-block w-100" alt="Plumbing Work">
+                     <div class="carousel-caption d-block">
+                        <h2>MISSION</h2>
+                        <p>Care Plumbing delivers top-quality repiping services in Southern California, ensuring customer satisfaction with ethical pricing, durable USA-made materials, and exceptional craftsmanship</p>
+						<a href="contact.html" class="btn btn-lg" style="border-radius: 35px; border: 2px solid #ffffffc7; background-color: transparent; color: #fff;">Get in Touch</a>
+                    </div>
+                </div>
+				                <div class="carousel-item active">
+                    <img src="images/sli3.jpg" class="d-block w-100" alt="Plumbing Work">
+                     <div class="carousel-caption d-block">
+                        <h2>SLIDER 2</h2>
+                        <p>Fast and reliable plumbing repairs and installations.</p>
+						<a href="contact.html" class="btn btn-lg" style="border-radius: 35px; border: 2px solid #333; background-color: transparent; color: #333;">Get in Touch</a>
+                    </div>
+                </div>
+				
+								                <div class="carousel-item active">
+                    <img src="images/sli2.png" class="d-block w-100" alt="Plumbing Work">
+                     <div class="carousel-caption d-block">
+                        <h2>SLIDER 1</h2>
+                        <p>Fast and reliable plumbing repairs and installations.</p>
+						<a href="contact.html" class="btn btn-lg" style="border-radius: 35px; border: 2px solid #ffffffc7; background-color: transparent; color: #fff;">Get in Touch</a>
+                    </div>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+<section id="about" class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1>About Us</h1>
+            <p>We’re John and Mike Ovsepyan, two brothers with 20+ years in the plumbing trade. Our Repiping Specialists – Care Plumbing family has repiped over 5,000 homes all over Southern California. We are committed to excellent service, and we are fully licensed, with both liability and Workers’ Compensation insurance. We serve Los Angeles County, Orange County, Riverside County, San Bernardino County, San Diego County and Ventura County.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://i.postimg.cc/Dz75xz9Z/imresizer-1732355728762.jpg" 
+                 alt="Our Team" 
+                 class="img-fluid rounded-circle" 
+                 style="border-radius: 35px; margin-left: 300px; max-width: 100%; height: auto;">
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Fix horizontal scrolling on smaller devices */
+    @media (max-width: 768px) {
+        #about img {
+            margin-left: 0 !important; /* Reset margin for mobile */
+        }
+        body {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+    }
+</style>
+
+
+<!-- Services Section -->
+<section id="services" class="container my-5">
+    <h1 class="text-center mb-5">Our Services</h1>
+    <div class="row text-center">
+        <!-- Service 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="p-4 service-card animate-fade-in" 
+                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="images/leak.png" 
+                     alt="Leak Repair" 
+                     class="img-fluid mb-3" 
+                     style="width: 80px; height: 80px; border-radius: 50%;">
+                <h5>Leak Repair</h5>
+                <p>Fixing leaks in pipes, faucets, and fixtures.</p>
+            </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="p-4 service-card animate-fade-in" 
+                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); animation-delay: 0.2s;">
+                <img src="images/drain.png" 
+                     alt="Drain Cleaning" 
+                     class="img-fluid mb-3" 
+                     style="width: 80px; height: 80px; border-radius: 50%;">
+                <h5>Drain Cleaning</h5>
+                <p>Removing blockages and buildup from drains and pipes.</p>
+            </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="p-4 service-card animate-fade-in" 
+                 style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); animation-delay: 0.4s;">
+                <img src="images/hw.png" 
+                     alt="Water Heater Installation" 
+                     class="img-fluid mb-3" 
+                     style="width: 80px; height: 80px; border-radius: 50%;">
+                <h5>Water Heater Installation</h5>
+                <p>Installing and repairing water heating systems.</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="services.html" class="btn btn-primary custom-btn">More Services</a>
+    </div>
+</section>
+
+<style>
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+    animation-fill-mode: both;
+}
+
+/* Add delay for staggered animation */
+.service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.service-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Hover effect - enlarge the card */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);  /* Enlarge the card */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);  /* Add more shadow */
+}
+</style>
+<!-- Testimonials Section -->
+<section id="testimonials" class="container my-5">
+    <h2 class="section-title text-center mb-4">What Our Customers Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+                <div class="p-4 text-center" style="border-radius: 30px; background-color: #f9f9f9; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <img src="images/revi1.png" class="rounded-circle mb-3" alt="Customer 1" style="width: 125px; height: 125px;">
+                    <p class="mb-1"><strong>John Doe</strong></p>
+                    <p>"Noble Plumbing USA is the best! They fixed my leak in no time!"</p>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+                <div class="p-4 text-center" style="border-radius: 30px; background-color: #f9f9f9; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <img src="https://i.postimg.cc/SQJ3q7Ft/ezgif-com-webp-to-jpg-converter-4.jpg" class="rounded-circle mb-3" alt="Customer 2" style="width: 125px; height: 125px;">
+                    <p class="mb-1"><strong>Jane Smith</strong></p>
+                    <p>"Highly recommend their services. Prompt and professional!"</p>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->           
+			            <div class="carousel-item">
+                <div class="p-4 text-center" style="border-radius: 30px; background-color: #f9f9f9; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <img src="https://i.postimg.cc/SQJ3q7Ft/ezgif-com-webp-to-jpg-converter-4.jpg" class="rounded-circle mb-3" alt="Customer 3" style="width: 125px; height: 125px;">
+                    <p class="mb-1"><strong>saf Smith</strong></p>
+                    <p>"Highly recommend their services. Prompt and professional!"</p>
+                </div>
+            </div>
+			<!-- Testimonial 4 -->
+			            <div class="carousel-item">
+                <div class="p-4 text-center" style="border-radius: 30px; background-color: #f9f9f9; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <img src="https://i.postimg.cc/SQJ3q7Ft/ezgif-com-webp-to-jpg-converter-4.jpg" class="rounded-circle mb-3" alt="Customer 4" style="width: 125px; height: 125px;">
+                    <p class="mb-1"><strong>sad Smith</strong></p>
+                    <p>"Highly recommend their services. Prompt and professional!"</p>
+                </div>
+            </div>						
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="container my-5">
+    <div class="row align-items-start">
+	<h2 class="section-title text-center mb-4">Contact Us</h2>
+        <!-- Form Section -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="p-4" style="border-radius: 30px; background-color: #f9f9f9; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="services" class="form-label">Choose Service</label>
+                        <select class="form-select" id="services">
+                            <option value="Leak Repair">Leak Repair</option>
+                            <option value="Drain Cleaning">Drain Cleaning</option>
+                            <option value="Water Heater">Water Heater Installation</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="col-lg-6">
+            <div style="border-radius: 30px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); height: 570px; max-width: 100%; margin: auto;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105748.95228379096!2d-118.44768721223429!3d34.07836338908473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c08672f8e1a1%3A0x55d1255ac467b7b5!2sOld%20Los%20Angeles%20Zoo!5e0!3m2!1sen!2s!4v1732698526661!5m2!1sen!2s"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="social-media">
+                        <a href="https://web.facebook.com" target="_blank"><img src="images/face.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="images/ins.png" alt="Instagram"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="images/twit.png" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/call.png" alt="Call">
+                                <p>Call Us: <br>xyz</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/email.png" alt="Email">
+                                <p>Email Us:<br>xyz@xyz.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	
+
+
+
+<!-- Bootstrap JS and Popper.js (for mobile toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
